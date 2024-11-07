@@ -1,6 +1,5 @@
 import streamlit as st
 
-
 # Set page configuration
 st.set_page_config(
     page_title="About - Healthcare Portal",
@@ -17,9 +16,8 @@ st.markdown("""
 
 # Mission Statement
 st.markdown("""
-    <div style='background-color: #f0f9ff; padding: 2rem; border-radius: 10px; margin-bottom: 2rem;'>
         <h2 style='color: #1e4b7a;'>Our Mission</h2>
-        <p style='font-size: 1.1rem;'>To provide accessible, high-quality healthcare services and information to our community.</p>
+        <p style='font-size: 1.1rem;'>To provide accessible and high-quality healthcare services to our community.</p>
     </div>
 """, unsafe_allow_html=True)
 
@@ -29,19 +27,15 @@ col1, col2 = st.columns(2)
 with col1:
     st.header("Who We Are")
     st.write("""
-    We are a leading healthcare provider committed to excellence in patient care. 
-    With over 20 years of experience, we have been serving our community with 
-    dedication and compassion.
+    We are a dedicated healthcare provider focused on excellence in patient care.
     """)
 
 with col2:
     st.header("Our Values")
     st.write("""
-    - Excellence in Healthcare
     - Patient-Centered Care
-    - Innovation & Research
     - Community Service
-    - Professional Development
+    - Professional Integrity
     """)
 
 # Statistics
@@ -53,3 +47,9 @@ col2.metric("Medical Staff", "200+")
 col3.metric("Departments", "15")
 col4.metric("Years of Service", "20+")
 
+# Footer
+st.markdown("""
+    <div style='text-align: center; margin-top: 2rem;'>
+        <p style='color: #1e4b7a;'>Together, we can achieve better health for all.</p>
+    </div>
+""", unsafe_allow_html=True)
